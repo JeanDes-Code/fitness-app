@@ -4,6 +4,7 @@ import {
   heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
 import { LinearGradient } from "expo-linear-gradient";
+import Animated, { FadeInDown } from "react-native-reanimated";
 
 import { bodyParts } from "../constants";
 import { useRouter } from "expo-router";
@@ -39,7 +40,11 @@ export default BodyParts;
 
 const BodyPartCard = ({ item, index, router }) => {
   return (
-    <View>
+    <Animated.View
+      entering={FadeInDown.duration(400)
+        .delay(index * 200)
+        .springify()}
+    >
       <TouchableOpacity
         style={{ width: wp(44), height: wp(52) }}
         className="flex justify-end p-4 mb-4"
@@ -66,6 +71,6 @@ const BodyPartCard = ({ item, index, router }) => {
           {item?.name}
         </Text>
       </TouchableOpacity>
-    </View>
+    </Animated.View>
   );
 };
