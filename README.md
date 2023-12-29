@@ -1,5 +1,7 @@
-## Fitness app - a react native mobile application
+# Fitness App - A React Native Mobile Application
 
-This mobile app is using a public API to provide workout exercices to users. Let's workout !
+This mobile app is using a public API to provide workout exercises to users. Let's workout!
 
-Ask me for a demo : https://jean-desauw.fr/contact
+![Home Screen](./IMG_0593.PNG)
+
+Ask me for a demo: [Contact Jean Desauw](https://jean-desauw.fr/contact)
